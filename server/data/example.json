@@ -1,0 +1,1313 @@
+[
+    {
+        "city_name_en": "Tirane",
+        "hotel_name_trans": "",
+        "last_reservation": {
+          "countrycode": null,
+          "country": null,
+          "time": ""
+        },
+        "b_blackout_android_prepayment_copy": 1,
+        "address_trans": "",
+        "countrycode": "al",
+        "top_ufi_benefits": [
+          {
+            "icon": "parking_sign",
+            "translated_name": "Parking"
+          },
+          {
+            "icon": "wifi",
+            "translated_name": "WiFi"
+          },
+          {
+            "translated_name": "Spa and wellness centre",
+            "icon": "spa"
+          },
+          {
+            "icon": "shuttle",
+            "translated_name": "Airport shuttle"
+          },
+          {
+            "translated_name": "Restaurant",
+            "icon": "food_and_drink"
+          },
+          {
+            "translated_name": "Fitness centre",
+            "icon": "fitness"
+          }
+        ],
+        "recommended_block_title": "Recommended for 1 adult",
+        "is_exclusive": null,
+        "cvc_required": "1",
+        "booking_home": {},
+        "arrival_date": "2024-09-14",
+        "timezone": "Europe/Tirane",
+        "b_sca_flow_property_user_ip": 0,
+        "wl_dest_id": "city::-108649",
+        "total_blocks": 11,
+        "cc_required": "1",
+        "spoken_languages": [
+          "it",
+          "en-gb"
+        ],
+        "is_preferred_plus": 0,
+        "family_facilities": [
+          "Family rooms",
+          "Soundproof rooms"
+        ],
+        "is_city_center": 0,
+        "rooms": {
+          "167616101": {
+            "apartment_configuration": null,
+            "private_bathroom_count": 0,
+            "private_bathroom_highlight": {
+              "has_highlight": 1,
+              "text": "Private bathroom with bath or shower"
+            },
+            "photos_may_sorted": 1,
+            "bed_configurations": [
+              {
+                "bed_types": [
+                  {
+                    "description_localized": null,
+                    "description": "151-180 cm wide",
+                    "name_with_count": "1 large double bed",
+                    "count": 1,
+                    "bed_type": 6,
+                    "name": "Large double bed(s)",
+                    "description_imperial": "60-70 inches wide"
+                  }
+                ]
+              },
+              {
+                "bed_types": [
+                  {
+                    "count": 2,
+                    "description_imperial": "35-51 inches wide",
+                    "name": "Single bed(s)",
+                    "bed_type": 1,
+                    "description_localized": null,
+                    "name_with_count": "2 single beds",
+                    "description": "90-130 cm wide"
+                  }
+                ]
+              }
+            ],
+            "is_high_floor_guaranteed": 0,
+            "highlights": [
+              {
+                "translated_name": "Free WiFi",
+                "icon": "icon_wifi"
+              },
+              {
+                "icon": "icon_viewed",
+                "id": 121,
+                "translated_name": "City view"
+              },
+              {
+                "icon": "icon_airconditioning",
+                "id": 11,
+                "translated_name": "Air conditioning"
+              },
+              {
+                "id": 38,
+                "translated_name": "Ensuite bathroom",
+                "icon": "icon_bath"
+              },
+              {
+                "id": 75,
+                "translated_name": "Flat-screen TV",
+                "icon": "icon_flattv"
+              },
+              {
+                "translated_name": "Soundproofing",
+                "id": 79,
+                "icon": "icon_soundproof"
+              },
+              {
+                "icon": "icon_checkmark",
+                "id": 3,
+                "translated_name": "Minibar"
+              }
+            ],
+            "children_and_beds_text": {
+              "age_intervals": [
+                {
+                  "types_by_price": [
+                    [
+                      "crib"
+                    ],
+                    [
+                      "extra_bed"
+                    ]
+                  ],
+                  "max_age": 1,
+                  "extra_bed": {
+                    "id": 13889990,
+                    "price_type_n": 2,
+                    "price_mode_n": 0,
+                    "price_mode": "per_night",
+                    "price": "AED 136.59",
+                    "price_type": "fixed"
+                  },
+                  "min_age": 0,
+                  "crib": {
+                    "price": 0,
+                    "price_mode": "per_night",
+                    "price_type": "free",
+                    "price_type_n": 0,
+                    "price_mode_n": 0,
+                    "id": 13889989
+                  },
+                  "group_by_price": {
+                    "free,per_night,0": [
+                      "crib"
+                    ],
+                    "fixed,per_night,136.59": [
+                      "extra_bed"
+                    ]
+                  }
+                },
+                {
+                  "extra_bed": {
+                    "price_type_n": 2,
+                    "price_mode_n": 0,
+                    "id": 13889990,
+                    "price_mode": "per_night",
+                    "price": "AED 136.59",
+                    "price_type": "fixed"
+                  },
+                  "min_age": 2,
+                  "types_by_price": [
+                    [
+                      "extra_bed"
+                    ]
+                  ],
+                  "group_by_price": {
+                    "fixed,per_night,136.59": [
+                      "extra_bed"
+                    ]
+                  },
+                  "max_age": 11
+                }
+              ],
+              "allow_children": 1,
+              "children_at_the_property": [
+                {
+                  "text": "Children of any age are welcome.",
+                  "highlight": 0
+                },
+                {
+                  "highlight": 1,
+                  "text": "To see correct prices and occupancy information, please add the number of children in your group and their ages to your search."
+                }
+              ],
+              "cribs_and_extra_beds": [
+                {
+                  "highlight": 0,
+                  "text": "The price in EUR has been converted to show you the approximate price in AED."
+                },
+                {
+                  "highlight": 0,
+                  "text": "Supplements are not calculated automatically in the total costs and will have to be paid for separately during your stay."
+                },
+                {
+                  "text": "The maximum number of cots, extra beds and children allowed in existing beds may vary depending on the option you book.",
+                  "highlight": 0
+                },
+                {
+                  "highlight": 0,
+                  "text": "All cots and extra beds are subject to availability."
+                }
+              ]
+            },
+            "facilities": [
+              {
+                "alt_facilitytype_name": "Bathroom",
+                "id": 19,
+                "alt_facilitytype_id": 5,
+                "facilitytype_name": "Bathroom",
+                "name": "Bathrobe",
+                "facilitytype_id": 5
+              },
+              {
+                "name": "Safety deposit box",
+                "facilitytype_id": 4,
+                "facilitytype_name": "Room Amenities",
+                "alt_facilitytype_id": 1,
+                "id": 6,
+                "alt_facilitytype_name": "General"
+              },
+              {
+                "alt_facilitytype_name": "Media & Technology",
+                "id": 75,
+                "alt_facilitytype_id": 6,
+                "facilitytype_name": "Media & Technology",
+                "facilitytype_id": 6,
+                "name": "Flat-screen TV"
+              },
+              {
+                "facilitytype_id": 8,
+                "name": "Wake-up service",
+                "facilitytype_name": "Services & Extras",
+                "alt_facilitytype_id": 3,
+                "id": 83,
+                "alt_facilitytype_name": "Services"
+              },
+              {
+                "facilitytype_id": 8,
+                "name": "Towels",
+                "facilitytype_name": "Services & Extras",
+                "alt_facilitytype_id": 5,
+                "id": 124,
+                "alt_facilitytype_name": "Bathroom"
+              },
+              {
+                "id": 27,
+                "alt_facilitytype_name": "Bathroom",
+                "facilitytype_id": 5,
+                "name": "Free toiletries",
+                "facilitytype_name": "Bathroom",
+                "alt_facilitytype_id": 5
+              },
+              {
+                "alt_facilitytype_name": "Food & Drink",
+                "id": 1,
+                "facilitytype_name": "Food & Drink",
+                "alt_facilitytype_id": 7,
+                "facilitytype_id": 7,
+                "name": "Tea/Coffee maker"
+              },
+              {
+                "name": "Slippers",
+                "facilitytype_id": 5,
+                "alt_facilitytype_id": 5,
+                "facilitytype_name": "Bathroom",
+                "id": 43,
+                "alt_facilitytype_name": "Bathroom"
+              },
+              {
+                "facilitytype_id": 5,
+                "name": "Bath or shower",
+                "alt_facilitytype_id": 5,
+                "facilitytype_name": "Bathroom",
+                "id": 69,
+                "alt_facilitytype_name": "Bathroom"
+              },
+              {
+                "id": 12,
+                "alt_facilitytype_name": "Bathroom",
+                "facilitytype_id": 5,
+                "name": "Hairdryer",
+                "facilitytype_name": "Bathroom",
+                "alt_facilitytype_id": 5
+              },
+              {
+                "id": 8,
+                "alt_facilitytype_name": "Media & Technology",
+                "facilitytype_id": 6,
+                "name": "TV",
+                "alt_facilitytype_id": 6,
+                "facilitytype_name": "Media & Technology"
+              },
+              {
+                "alt_facilitytype_name": "Food & Drink",
+                "id": 3,
+                "facilitytype_name": "Food & Drink",
+                "alt_facilitytype_id": 7,
+                "name": "Minibar",
+                "facilitytype_id": 7
+              },
+              {
+                "alt_facilitytype_name": "View",
+                "id": 121,
+                "facilitytype_name": "Outdoor & View",
+                "alt_facilitytype_id": 14,
+                "facilitytype_id": 9,
+                "name": "City view"
+              },
+              {
+                "id": 31,
+                "alt_facilitytype_name": "Bathroom",
+                "facilitytype_id": 5,
+                "name": "Toilet",
+                "facilitytype_name": "Bathroom",
+                "alt_facilitytype_id": 5
+              },
+              {
+                "id": 86,
+                "alt_facilitytype_name": "Kitchen",
+                "facilitytype_id": 7,
+                "name": "Electric kettle",
+                "alt_facilitytype_id": 12,
+                "facilitytype_name": "Food & Drink"
+              },
+              {
+                "alt_facilitytype_name": "Physical distancing",
+                "id": 230,
+                "facilitytype_name": "Physical distancing",
+                "alt_facilitytype_id": 39,
+                "name": "Single-room air conditioning for guest accommodation",
+                "facilitytype_id": 39
+              },
+              {
+                "id": 40,
+                "alt_facilitytype_name": "General",
+                "name": "Heating",
+                "facilitytype_id": 4,
+                "alt_facilitytype_id": 1,
+                "facilitytype_name": "Room Amenities"
+              },
+              {
+                "alt_facilitytype_name": "Media & Technology",
+                "id": 9,
+                "facilitytype_name": "Media & Technology",
+                "alt_facilitytype_id": 6,
+                "facilitytype_id": 6,
+                "name": "Telephone"
+              },
+              {
+                "alt_facilitytype_name": "Bathroom",
+                "id": 100,
+                "alt_facilitytype_id": 5,
+                "facilitytype_name": "Bathroom",
+                "facilitytype_id": 5,
+                "name": "Bidet"
+              },
+              {
+                "alt_facilitytype_name": "Bedroom",
+                "id": 95,
+                "facilitytype_name": "Room Amenities",
+                "alt_facilitytype_id": 17,
+                "name": "Wardrobe or closet",
+                "facilitytype_id": 4
+              },
+              {
+                "alt_facilitytype_name": "Bathroom",
+                "id": 141,
+                "alt_facilitytype_id": 5,
+                "facilitytype_name": "Bathroom",
+                "facilitytype_id": 5,
+                "name": "Toilet paper"
+              },
+              {
+                "alt_facilitytype_id": 1,
+                "facilitytype_name": "Room Amenities",
+                "facilitytype_id": 4,
+                "name": "Soundproofing",
+                "alt_facilitytype_name": "General",
+                "id": 79
+              },
+              {
+                "id": 44,
+                "alt_facilitytype_name": "Media & Technology",
+                "facilitytype_id": 6,
+                "name": "Satellite channels",
+                "facilitytype_name": "Media & Technology",
+                "alt_facilitytype_id": 6
+              },
+              {
+                "id": 11,
+                "alt_facilitytype_name": "General",
+                "name": "Air conditioning",
+                "facilitytype_id": 4,
+                "facilitytype_name": "Room Amenities",
+                "alt_facilitytype_id": 1
+              },
+              {
+                "name": "Hand sanitiser",
+                "facilitytype_id": 40,
+                "facilitytype_name": "Cleanliness & disinfecting",
+                "alt_facilitytype_id": 40,
+                "id": 231,
+                "alt_facilitytype_name": "Cleanliness & disinfecting"
+              },
+              {
+                "alt_facilitytype_id": 5,
+                "facilitytype_name": "Bathroom",
+                "facilitytype_id": 5,
+                "name": "Private bathroom",
+                "alt_facilitytype_name": "Bathroom",
+                "id": 38
+              }
+            ],
+            "photos": [
+              {
+                "ratio": 1.50075037518759,
+                "photo_id": 70292338,
+                "url_640x200": "https://cf.bstatic.com/xdata/images/hotel/640x200/70292338.jpg?k=e3955316d43e3c172ab54529506f6761156cf1c1f6ccc9daf1399d99aaa521f0&o=",
+                "new_order": 0,
+                "url_original": "https://cf.bstatic.com/xdata/images/hotel/max500/70292338.jpg?k=e3955316d43e3c172ab54529506f6761156cf1c1f6ccc9daf1399d99aaa521f0&o=",
+                "last_update_date": "2016-05-27 12:21:40",
+                "url_max300": "https://cf.bstatic.com/xdata/images/hotel/max300/70292338.jpg?k=e3955316d43e3c172ab54529506f6761156cf1c1f6ccc9daf1399d99aaa521f0&o=",
+                "url_square60": "https://cf.bstatic.com/xdata/images/hotel/square60/70292338.jpg?k=e3955316d43e3c172ab54529506f6761156cf1c1f6ccc9daf1399d99aaa521f0&o="
+              },
+              {
+                "url_original": "https://cf.bstatic.com/xdata/images/hotel/max500/219910750.jpg?k=185c97745f48dd9e7015e5b930157b0074d6529fd3a45699a7c461799f0509ab&o=",
+                "url_square60": "https://cf.bstatic.com/xdata/images/hotel/square60/219910750.jpg?k=185c97745f48dd9e7015e5b930157b0074d6529fd3a45699a7c461799f0509ab&o=",
+                "last_update_date": "2019-09-19 11:42:45",
+                "url_max300": "https://cf.bstatic.com/xdata/images/hotel/max300/219910750.jpg?k=185c97745f48dd9e7015e5b930157b0074d6529fd3a45699a7c461799f0509ab&o=",
+                "photo_id": 219910750,
+                "url_640x200": "https://cf.bstatic.com/xdata/images/hotel/640x200/219910750.jpg?k=185c97745f48dd9e7015e5b930157b0074d6529fd3a45699a7c461799f0509ab&o=",
+                "ratio": 1.5,
+                "new_order": 1
+              },
+              {
+                "url_original": "https://cf.bstatic.com/xdata/images/hotel/max500/219910729.jpg?k=3b834d13f24aa16408068bc49358890e967bbebf1d49d9a188d763557ee6271e&o=",
+                "url_square60": "https://cf.bstatic.com/xdata/images/hotel/square60/219910729.jpg?k=3b834d13f24aa16408068bc49358890e967bbebf1d49d9a188d763557ee6271e&o=",
+                "last_update_date": "2019-09-19 11:42:34",
+                "url_max300": "https://cf.bstatic.com/xdata/images/hotel/max300/219910729.jpg?k=3b834d13f24aa16408068bc49358890e967bbebf1d49d9a188d763557ee6271e&o=",
+                "url_640x200": "https://cf.bstatic.com/xdata/images/hotel/640x200/219910729.jpg?k=3b834d13f24aa16408068bc49358890e967bbebf1d49d9a188d763557ee6271e&o=",
+                "photo_id": 219910729,
+                "ratio": 1.5,
+                "new_order": 9
+              },
+              {
+                "new_order": 2,
+                "url_640x200": "https://cf.bstatic.com/xdata/images/hotel/640x200/219910740.jpg?k=442c4b9d87be2ab1bd14e3f8f319613b89d81e7af63e28ed9c1c0d30e9b2bce8&o=",
+                "photo_id": 219910740,
+                "ratio": 1.5,
+                "url_square60": "https://cf.bstatic.com/xdata/images/hotel/square60/219910740.jpg?k=442c4b9d87be2ab1bd14e3f8f319613b89d81e7af63e28ed9c1c0d30e9b2bce8&o=",
+                "last_update_date": "2019-09-19 11:42:39",
+                "url_max300": "https://cf.bstatic.com/xdata/images/hotel/max300/219910740.jpg?k=442c4b9d87be2ab1bd14e3f8f319613b89d81e7af63e28ed9c1c0d30e9b2bce8&o=",
+                "url_original": "https://cf.bstatic.com/xdata/images/hotel/max500/219910740.jpg?k=442c4b9d87be2ab1bd14e3f8f319613b89d81e7af63e28ed9c1c0d30e9b2bce8&o="
+              },
+              {
+                "url_square60": "https://cf.bstatic.com/xdata/images/hotel/square60/219910712.jpg?k=22938d268377d769f5383d6fc4032e5ce0be557ae579bf2926c33cf2965abc88&o=",
+                "url_max300": "https://cf.bstatic.com/xdata/images/hotel/max300/219910712.jpg?k=22938d268377d769f5383d6fc4032e5ce0be557ae579bf2926c33cf2965abc88&o=",
+                "last_update_date": "2019-09-19 11:42:23",
+                "url_original": "https://cf.bstatic.com/xdata/images/hotel/max500/219910712.jpg?k=22938d268377d769f5383d6fc4032e5ce0be557ae579bf2926c33cf2965abc88&o=",
+                "new_order": 10,
+                "photo_id": 219910712,
+                "url_640x200": "https://cf.bstatic.com/xdata/images/hotel/640x200/219910712.jpg?k=22938d268377d769f5383d6fc4032e5ce0be557ae579bf2926c33cf2965abc88&o=",
+                "ratio": 1.5
+              },
+              {
+                "url_original": "https://cf.bstatic.com/xdata/images/hotel/max500/219910717.jpg?k=bae82e66cf9722d0b6506e45bc602de03a5b81ab4d86faa95e9307a0fbb23763&o=",
+                "url_max300": "https://cf.bstatic.com/xdata/images/hotel/max300/219910717.jpg?k=bae82e66cf9722d0b6506e45bc602de03a5b81ab4d86faa95e9307a0fbb23763&o=",
+                "last_update_date": "2019-09-19 11:42:27",
+                "url_square60": "https://cf.bstatic.com/xdata/images/hotel/square60/219910717.jpg?k=bae82e66cf9722d0b6506e45bc602de03a5b81ab4d86faa95e9307a0fbb23763&o=",
+                "ratio": 1.5,
+                "photo_id": 219910717,
+                "url_640x200": "https://cf.bstatic.com/xdata/images/hotel/640x200/219910717.jpg?k=bae82e66cf9722d0b6506e45bc602de03a5b81ab4d86faa95e9307a0fbb23763&o=",
+                "new_order": 11
+              },
+              {
+                "url_original": "https://cf.bstatic.com/xdata/images/hotel/max500/219910760.jpg?k=9588b40e246cbab64e4d540fe1869e361c3aea9a70750766e5e34a544fb49c86&o=",
+                "last_update_date": "2019-09-19 11:42:49",
+                "url_max300": "https://cf.bstatic.com/xdata/images/hotel/max300/219910760.jpg?k=9588b40e246cbab64e4d540fe1869e361c3aea9a70750766e5e34a544fb49c86&o=",
+                "url_square60": "https://cf.bstatic.com/xdata/images/hotel/square60/219910760.jpg?k=9588b40e246cbab64e4d540fe1869e361c3aea9a70750766e5e34a544fb49c86&o=",
+                "ratio": 1.5,
+                "url_640x200": "https://cf.bstatic.com/xdata/images/hotel/640x200/219910760.jpg?k=9588b40e246cbab64e4d540fe1869e361c3aea9a70750766e5e34a544fb49c86&o=",
+                "photo_id": 219910760,
+                "new_order": 3
+              },
+              {
+                "url_original": "https://cf.bstatic.com/xdata/images/hotel/max500/70292344.jpg?k=990362db09d3bfcdfe447cd7c89d81c2ac93f26030773db052c400c5cde9efa7&o=",
+                "last_update_date": "2016-05-27 12:21:42",
+                "url_max300": "https://cf.bstatic.com/xdata/images/hotel/max300/70292344.jpg?k=990362db09d3bfcdfe447cd7c89d81c2ac93f26030773db052c400c5cde9efa7&o=",
+                "url_square60": "https://cf.bstatic.com/xdata/images/hotel/square60/70292344.jpg?k=990362db09d3bfcdfe447cd7c89d81c2ac93f26030773db052c400c5cde9efa7&o=",
+                "ratio": 1.5,
+                "url_640x200": "https://cf.bstatic.com/xdata/images/hotel/640x200/70292344.jpg?k=990362db09d3bfcdfe447cd7c89d81c2ac93f26030773db052c400c5cde9efa7&o=",
+                "photo_id": 70292344,
+                "new_order": 4
+              },
+              {
+                "url_original": "https://cf.bstatic.com/xdata/images/hotel/max500/70292356.jpg?k=d1e8da638104345c1259ae8475c2968843aa875e6def8643578b88a6c3633bf7&o=",
+                "url_square60": "https://cf.bstatic.com/xdata/images/hotel/square60/70292356.jpg?k=d1e8da638104345c1259ae8475c2968843aa875e6def8643578b88a6c3633bf7&o=",
+                "last_update_date": "2016-05-27 12:21:49",
+                "url_max300": "https://cf.bstatic.com/xdata/images/hotel/max300/70292356.jpg?k=d1e8da638104345c1259ae8475c2968843aa875e6def8643578b88a6c3633bf7&o=",
+                "url_640x200": "https://cf.bstatic.com/xdata/images/hotel/640x200/70292356.jpg?k=d1e8da638104345c1259ae8475c2968843aa875e6def8643578b88a6c3633bf7&o=",
+                "photo_id": 70292356,
+                "ratio": 1.5,
+                "new_order": 5
+              },
+              {
+                "url_original": "https://cf.bstatic.com/xdata/images/hotel/max500/70292336.jpg?k=33c88a996dcd7cb3ed11279cd432f5c25850f27bdeadfb02ed113a7578420624&o=",
+                "url_square60": "https://cf.bstatic.com/xdata/images/hotel/square60/70292336.jpg?k=33c88a996dcd7cb3ed11279cd432f5c25850f27bdeadfb02ed113a7578420624&o=",
+                "url_max300": "https://cf.bstatic.com/xdata/images/hotel/max300/70292336.jpg?k=33c88a996dcd7cb3ed11279cd432f5c25850f27bdeadfb02ed113a7578420624&o=",
+                "last_update_date": "2016-05-27 12:21:40",
+                "url_640x200": "https://cf.bstatic.com/xdata/images/hotel/640x200/70292336.jpg?k=33c88a996dcd7cb3ed11279cd432f5c25850f27bdeadfb02ed113a7578420624&o=",
+                "photo_id": 70292336,
+                "ratio": 1.5,
+                "new_order": 6
+              },
+              {
+                "ratio": 1.49925037481259,
+                "photo_id": 70292337,
+                "url_640x200": "https://cf.bstatic.com/xdata/images/hotel/640x200/70292337.jpg?k=4bc1d8b0fc87d23d136b25a6f6499f4327a828d4593d38086b54dbb9786cd678&o=",
+                "new_order": 7,
+                "url_original": "https://cf.bstatic.com/xdata/images/hotel/max500/70292337.jpg?k=4bc1d8b0fc87d23d136b25a6f6499f4327a828d4593d38086b54dbb9786cd678&o=",
+                "url_max300": "https://cf.bstatic.com/xdata/images/hotel/max300/70292337.jpg?k=4bc1d8b0fc87d23d136b25a6f6499f4327a828d4593d38086b54dbb9786cd678&o=",
+                "last_update_date": "2016-05-27 12:21:40",
+                "url_square60": "https://cf.bstatic.com/xdata/images/hotel/square60/70292337.jpg?k=4bc1d8b0fc87d23d136b25a6f6499f4327a828d4593d38086b54dbb9786cd678&o="
+              },
+              {
+                "url_square60": "https://cf.bstatic.com/xdata/images/hotel/square60/70292346.jpg?k=0bebd26424395df44e0cf99a692794c1c16b2c8c3972a0a49d2378076d54919c&o=",
+                "last_update_date": "2016-05-27 12:21:45",
+                "url_max300": "https://cf.bstatic.com/xdata/images/hotel/max300/70292346.jpg?k=0bebd26424395df44e0cf99a692794c1c16b2c8c3972a0a49d2378076d54919c&o=",
+                "url_original": "https://cf.bstatic.com/xdata/images/hotel/max500/70292346.jpg?k=0bebd26424395df44e0cf99a692794c1c16b2c8c3972a0a49d2378076d54919c&o=",
+                "new_order": 8,
+                "photo_id": 70292346,
+                "url_640x200": "https://cf.bstatic.com/xdata/images/hotel/640x200/70292346.jpg?k=0bebd26424395df44e0cf99a692794c1c16b2c8c3972a0a49d2378076d54919c&o=",
+                "ratio": 1.5
+              }
+            ],
+            "description": "Featuring free toiletries and bathrobes, this twin/double room includes a private bathroom with a bath or a shower, a bidet and a hairdryer. The spacious air-conditioned twin/double room features a flat-screen TV with satellite channels, soundproof walls, a minibar, a tea and coffee maker as well as city views."
+          }
+        },
+        "city_in_trans": "in Tirana",
+        "distance_to_cc": 0.212022935368458,
+        "room_recommendation": [
+          {
+            "children": 0,
+            "babies": 0,
+            "number_of_extra_beds": 0,
+            "total_extra_bed_price_in_hotel_currency": 0,
+            "block_id": "167616101_310333226_1_2_0",
+            "adults": 1,
+            "total_extra_bed_price": 0
+          }
+        ],
+        "preferences": [
+          {
+            "id": "bed_type",
+            "is_disabled": 0,
+            "text": "Choose your bed",
+            "choices": [
+              {
+                "on_select_text": "",
+                "description": "",
+                "text": "No preference",
+                "selected": 1,
+                "id": 0
+              },
+              {
+                "id": 1,
+                "description": "151-180 cm wide",
+                "text": "1 large double bed",
+                "on_select_text": "1 large double bed"
+              },
+              {
+                "id": 2,
+                "on_select_text": "2 single beds",
+                "text": "2 single beds",
+                "description": "90-130 cm wide"
+              }
+            ],
+            "icon_name": "icon_bedtype",
+            "room_ids": [
+              "167616101"
+            ]
+          }
+        ],
+        "currency_code": "EUR",
+        "cc1": "al",
+        "default_wishlist_name": "Tirana",
+        "qualifies_for_no_cc_reservation": 0,
+        "class_is_estimated": 0,
+        "departure_date": "2024-09-15",
+        "city_trans": "Tirana",
+        "nr_bookings_today": 15,
+        "check_only_x_left": 1,
+        "use_new_bui_icon_highlight": 0,
+        "languages_spoken": {
+          "languagecode": [
+            "it",
+            "en-gb"
+          ]
+        },
+        "only_x_left": {
+          "rooms_list": {
+            "167616103_310333226_0_1_0": "Only 4 rooms left on Booking.com",
+            "167616103_310333226_1_1_0": "Only 4 rooms left on Booking.com",
+            "167616102_310333226_0_1_0": "Only 3 left on Booking.com"
+          },
+          "post_select": {
+            "167616103_310333226_0_1_0": "You've selected the last 4 rooms like this left on Booking.com!",
+            "167616103_310333226_1_1_0": "You've selected the last 4 rooms like this left on Booking.com!",
+            "167616102_310333226_0_1_0": "You've selected the last 3 like this left on Booking.com!"
+          },
+          "microfunnel_rate_selection": {},
+          "room_page": {
+            "167616103_310333226_0_1_0": "Only 4 rooms left on Booking.com",
+            "167616103_310333226_1_1_0": "Only 4 rooms left on Booking.com",
+            "167616102_310333226_0_1_0": "Only 3 left on Booking.com"
+          },
+          "microfunnel_rooms_list": {
+            "167616102": "Only 3 left on Booking.com",
+            "167616103": "Only 4 rooms left on Booking.com"
+          }
+        },
+        "url": "https://www.booking.com/hotel/al/the-plaza-tirana.html",
+        "zip": "1001",
+        "accommodation_type_name": "Hotels",
+        "hotel_include_breakfast": 1,
+        "cant_book": 0,
+        "tax_exceptions": [],
+        "can_show_room_filters": 1,
+        "plq_sensitivity": "",
+        "hotel_facilities": "424,80,96,459,17,189,75,487,81,184,134,462,242,54,63,237,219,107,304,232,117,53,64,209,467,418,6,400,16,185,455,160,236,161,140,243,210,5,20,425,25,458,420,486,421,22,405,205,450,451,181,176,91,227,124,47,452,182,457,257,422,129,52,51,449,142,2,109,464,79,244,3,11,7,203,231,230,133,44,46,468,485,163,461,460,23,108,10,241,43,240,28,48,8,15,158,488,423,253,453,226",
+        "duplicate_rates_removed": 0,
+        "available_rooms": 9,
+        "b_legal_use_neutral_color_for_persuasion_legal": 0,
+        "ufi": -108649,
+        "payment_product": "accept_cc",
+        "min_room_distribution": {
+          "children": [],
+          "adults": 1
+        },
+        "b_max_los_data": {
+          "default_los": 45,
+          "is_fullon": 0,
+          "has_extended_los": 1,
+          "extended_los": 90,
+          "max_allowed_los": 90,
+          "experiment": "long_stays_android_extend_los_2"
+        },
+        "aggregated_data": {
+          "has_seating": 1,
+          "has_kitchen": 0,
+          "has_refundable": 1,
+          "has_nonrefundable": 0,
+          "common_kitchen_fac": [
+            {
+              "id": 86,
+              "name": "Electric kettle"
+            }
+          ]
+        },
+        "rare_find_state": "NOT_RARE",
+        "is_vp2_enrolled": 0,
+        "is_cash_accepted_check_enabled": 1,
+        "block_count": 11,
+        "facilities_block": {
+          "facilities": [
+            {
+              "icon": "nosmoking",
+              "name": "Non-smoking rooms"
+            },
+            {
+              "name": "Airport shuttle",
+              "icon": "shuttle"
+            },
+            {
+              "icon": "food_and_drink",
+              "name": "Restaurant"
+            },
+            {
+              "name": "Room service",
+              "icon": "clean"
+            },
+            {
+              "name": "Family rooms",
+              "icon": "family"
+            },
+            {
+              "name": "Fitness centre",
+              "icon": "fitness"
+            },
+            {
+              "name": "Facilities for disabled guests",
+              "icon": "disabled"
+            },
+            {
+              "name": "WiFi available in all areas",
+              "icon": "wifi"
+            },
+            {
+              "icon": "parking_sign",
+              "name": "Free parking"
+            },
+            {
+              "name": "Private parking",
+              "icon": "parking_sign"
+            },
+            {
+              "icon": "wifi",
+              "name": "Free WiFi"
+            },
+            {
+              "name": "Spa and wellness centre",
+              "icon": "spa"
+            }
+          ],
+          "name": "Most popular facilities",
+          "type": "popular"
+        },
+        "is_tpi_exclusive_property": 0,
+        "hotel_text": {},
+        "is_in_real_heart": 1,
+        "has_theme_park_benefits": 0,
+        "is_preferred": 1,
+        "is_hotel_ctrip": 0,
+        "urgency_room_string": "Double or Twin Room",
+        "hotel_name": "Maritim Hotel Plaza Tirana",
+        "composite_price_breakdown": {
+          "items": [
+            {
+              "kind": "charge",
+              "name": "VAT",
+              "item_amount": {
+                "amount_rounded": "AED 33",
+                "amount_unrounded": "AED 33.36",
+                "value": 33.357146948995,
+                "currency": "AED"
+              },
+              "details": "6 % VAT",
+              "inclusion_type": "included",
+              "base": {
+                "percentage": 6,
+                "kind": "percentage"
+              }
+            },
+            {
+              "base": {
+                "kind": "per_person_per_night",
+                "base_amount": 2.5
+              },
+              "kind": "charge",
+              "name": "City tax",
+              "item_amount": {
+                "amount_rounded": "AED 10",
+                "value": 9.75678139236608,
+                "amount_unrounded": "AED 9.76",
+                "currency": "AED"
+              },
+              "inclusion_type": "excluded",
+              "details": null
+            }
+          ],
+          "benefits": [],
+          "included_taxes_and_charges_amount": {
+            "currency": "AED",
+            "amount_unrounded": "AED 33.36",
+            "value": 33.357146948995,
+            "amount_rounded": "AED 33"
+          },
+          "gross_amount_per_night": {
+            "currency": "AED",
+            "value": 589.309596098911,
+            "amount_unrounded": "AED 589.31",
+            "amount_rounded": "AED 589"
+          },
+          "net_amount": {
+            "amount_rounded": "AED 556",
+            "value": 555.952449149916,
+            "amount_unrounded": "AED 555.95",
+            "currency": "AED"
+          },
+          "gross_amount_hotel_currency": {
+            "currency": "EUR",
+            "value": 151,
+            "amount_unrounded": "€ 151",
+            "amount_rounded": "€ 151"
+          },
+          "excluded_amount": {
+            "currency": "AED",
+            "amount_rounded": "AED 10",
+            "value": 9.75678139236608,
+            "amount_unrounded": "AED 9.76"
+          },
+          "gross_amount": {
+            "amount_rounded": "AED 589",
+            "value": 589.309596098911,
+            "amount_unrounded": "AED 589.31",
+            "currency": "AED"
+          },
+          "has_long_stays_weekly_rate_price": 0,
+          "all_inclusive_amount": {
+            "currency": "AED",
+            "amount_rounded": "AED 599",
+            "value": 599.066377491277,
+            "amount_unrounded": "AED 599.07"
+          },
+          "charges_details": {
+            "mode": "extra_charges",
+            "amount": {
+              "currency": "AED",
+              "value": 10
+            },
+            "translated_copy": "+AED 9.76 taxes and charges"
+          },
+          "has_long_stays_monthly_rate_price": 0
+        },
+        "default_language": "it",
+        "average_room_size_for_ufi_m2": "27.83",
+        "latitude": 41.3275380631024,
+        "address_required": 1,
+        "seen_cc_app_hp_missing_info": 0,
+        "review_nr": 2146,
+        "mobile_discount_percentage": 0,
+        "country_trans": "Albania",
+        "available_deal_descriptions": [],
+        "breakfast_review_score": {
+          "review_score_word": "Very good",
+          "review_number": 131,
+          "rating": 8.5,
+          "review_score": 8.5,
+          "review_snippet": "",
+          "review_count": 131
+        },
+        "accommodation_type": 204,
+        "mf_rate_selection": 1,
+        "hotel_id": 1676161,
+        "district": "The best-rated area in Tirana",
+        "soldout": 0,
+        "address": "Rruga 28 Nentori",
+        "district_id": 10531,
+        "is_crimea": 0,
+        "longitude": 19.8214377835393,
+        "block": [
+          {
+            "room_surface_in_m2": 32,
+            "nr_children": 0,
+            "mealplan": "Breakfast: AED 94 per person per night",
+            "genius_discount_percentage": 0,
+            "room_name": "Double or Twin Room",
+            "babycots_available_amount": null,
+            "number_of_bathrooms": 0,
+            "is_dormitory": 0,
+            "room_count": 18,
+            "name": "Double or Twin Room - single occupancy - Free cancellation",
+            "pod_ios_migrate_policies_to_smp_fullon": 0,
+            "block_text": {
+              "policies": [
+                {
+                  "content": "You may cancel free of charge until 1 day before arrival. You will be charged the total price of the reservation if you cancel within 1 day before arrival. If you don't show up, the no-show fee will be the same as the cancellation fee.",
+                  "class": "POLICY_CANCELLATION"
+                },
+                {
+                  "content": "No prepayment is needed.",
+                  "class": "POLICY_PREPAY"
+                },
+                {
+                  "class": "POLICY_HOTEL_MEALPLAN",
+                  "price": 24,
+                  "currencycode": "EUR",
+                  "mealplan_vector": "2",
+                  "content": "Breakfast: AED 94 per person per night"
+                },
+                {
+                  "class": "POLICY_TITLE",
+                  "content": "General"
+                }
+              ]
+            },
+            "is_smart_deal": 0,
+            "all_inclusive": 0,
+            "roomtype_id": 24,
+            "refundable_until": "2024-09-12 23:59:59 +0200",
+            "is_last_minute_deal": 0,
+            "is_domestic_rate": 0,
+            "max_children_free_age": 2,
+            "dinner_included": 0,
+            "extrabed_available": 0,
+            "is_genius_deal": null,
+            "deposit_required": 0,
+            "babycots_available": 0,
+            "bh_room_highlights": [],
+            "can_reserve_free_parking": 1,
+            "is_secret_deal": 0,
+            "room_surface_in_feet2": 344.4451328,
+            "deals": {
+              "deal_attributes": {
+                "has_secret_channel_option": 0
+              }
+            },
+            "must_reserve_free_parking": 0,
+            "number_of_bedrooms": 0,
+            "b_bsb_campaigns": [],
+            "detail_mealplan": [
+              {
+                "icon": "coffee",
+                "currency": "EUR",
+                "price": 24,
+                "title": "Breakfast available"
+              }
+            ],
+            "block_id": "167616101_310333226_1_2_0",
+            "paymentterms": {
+              "prepayment": {
+                "type": "no_prepayment",
+                "simple_translation": "No prepayment",
+                "description": "You'll pay during your stay.",
+                "type_translation": "No payment needed today",
+                "type_extended": "non_refundable_prepayment",
+                "info": {
+                  "timezone": null,
+                  "timezone_offset": null,
+                  "refundable": "anytime",
+                  "time": null,
+                  "date_before": null,
+                  "date": null,
+                  "time_before_midnight": null,
+                  "prepayment_at_booktime": 0,
+                  "is_midnight": null
+                },
+                "timeline": {
+                  "policygroup_instance_id": "36/152/-",
+                  "u_currency_code": "AED",
+                  "currency_code": "EUR",
+                  "stages": [
+                    {
+                      "limit_timezone": "Tirana",
+                      "limit_until_date": "14 September 2024",
+                      "limit_from_date": "16 April 2024",
+                      "limit_from": "16 April 2024 12:27",
+                      "limit_until": "14 September 2024 23:59",
+                      "amount": "0.00",
+                      "limit_until_time": "23:59",
+                      "is_free": 1,
+                      "is_effective": 1,
+                      "u_stage_fee_pretty": "AED 0",
+                      "text": "Before you stay you'll pay",
+                      "u_fee_remaining_pretty": "AED 589",
+                      "u_fee_pretty": "AED 0",
+                      "fee_pretty": "&#x20AC; 0",
+                      "limit_from_time": "12:27",
+                      "limit_from_raw": "2024-04-16 12:27:42",
+                      "limit_until_raw": "2024-09-14 23:59:59",
+                      "u_fee_remaining": "589.31",
+                      "fee_remaining_pretty": "&#x20AC; 151",
+                      "u_stage_fee": "0.00",
+                      "b_number": 0,
+                      "b_state": "FREE",
+                      "fee_rounded": 0,
+                      "u_fee": "0.00",
+                      "fee": 0,
+                      "amount_pretty": "AED 0",
+                      "current_stage": 1,
+                      "stage_fee_pretty": "&#x20AC; 0",
+                      "effective_number": 0,
+                      "fee_remaining": 151,
+                      "stage_fee": 0
+                    },
+                    {
+                      "amount_pretty": "AED 589",
+                      "text": "At the property you'll pay",
+                      "is_free": 0,
+                      "after_checkin": 1,
+                      "amount": "589.31"
+                    }
+                  ],
+                  "nr_stages": 2
+                },
+                "extended_type_translation": "No payment needed today"
+              },
+              "cancellation": {
+                "timeline": {
+                  "stages": [
+                    {
+                      "limit_from": "16 April 2024 12:27",
+                      "limit_until": "12 September 2024 23:59",
+                      "limit_timezone": "Tirana",
+                      "limit_from_date": "16 April 2024",
+                      "limit_until_date": "12 September 2024",
+                      "u_fee_pretty": "AED 0",
+                      "u_fee_remaining_pretty": "AED 589",
+                      "stage_translation": "Free to cancel",
+                      "fee_pretty": "&#x20AC; 0",
+                      "limit_from_time": "12:27",
+                      "is_free": 1,
+                      "date_until": "2024-09-12 23:59:59 +0200",
+                      "limit_until_time": "23:59",
+                      "is_effective": 1,
+                      "text": "Free cancellation until 23:59 on 12 Sept",
+                      "u_stage_fee_pretty": "AED 0",
+                      "u_stage_fee": "0.00",
+                      "b_state": "FREE",
+                      "b_number": 0,
+                      "fee_rounded": 0,
+                      "limit_from_raw": "2024-04-16 12:27:42",
+                      "limit_until_raw": "2024-09-12 23:59:59",
+                      "u_fee_remaining": "589.31",
+                      "fee_remaining_pretty": "&#x20AC; 151",
+                      "current_stage": 1,
+                      "stage_fee": 0,
+                      "stage_fee_pretty": "&#x20AC; 0",
+                      "effective_number": 0,
+                      "fee_remaining": 151,
+                      "u_fee": "0.00",
+                      "text_refundable": "You'll get a full refund if you cancel before 23:59 on 12 September 2024.",
+                      "fee": 0
+                    },
+                    {
+                      "limit_from_time": "00:00",
+                      "u_fee_pretty": "AED 589",
+                      "u_fee_remaining_pretty": "AED 0",
+                      "stage_translation": "No refund if you cancel",
+                      "fee_pretty": "&#x20AC; 151",
+                      "is_effective": 1,
+                      "text": "From 00:00 on 13 Sept",
+                      "u_stage_fee_pretty": "AED 589",
+                      "amount": 589.31,
+                      "is_free": 0,
+                      "limit_until_time": "00:00",
+                      "limit_from": "13 September 2024 00:00",
+                      "limit_until": "13 September 2024 00:00",
+                      "limit_from_date": "13 September 2024",
+                      "limit_until_date": "13 September 2024",
+                      "limit_timezone": "Tirana",
+                      "stage_fee": 151,
+                      "fee_remaining": 0,
+                      "stage_fee_pretty": "&#x20AC; 151",
+                      "effective_number": 1,
+                      "current_stage": 0,
+                      "fee": 151,
+                      "amount_pretty": "AED 589",
+                      "u_fee": "589.31",
+                      "date_from": "2024-09-13 00:00:00 +0200",
+                      "text_refundable": "If you cancel from 13 September 2024, you will no longer be eligible for a refund.",
+                      "b_state": "NONREF",
+                      "b_number": 1,
+                      "fee_rounded": 151,
+                      "u_stage_fee": "589.31",
+                      "u_fee_remaining": "0.00",
+                      "fee_remaining_pretty": "&#x20AC; 0",
+                      "limit_from_raw": "2024-09-13 00:00:00",
+                      "limit_until_raw": "2024-09-13 00:00:00"
+                    }
+                  ],
+                  "currency_code": "EUR",
+                  "nr_stages": 2,
+                  "policygroup_instance_id": "36/152/-",
+                  "u_currency_code": "AED"
+                },
+                "type": "free_cancellation",
+                "non_refundable_anymore": 0,
+                "bucket": "SMP_FLEX",
+                "guaranteed_non_refundable": 0,
+                "description": "You may cancel free of charge until 1 day before arrival. You will be charged the total price of the reservation if you cancel within 1 day before arrival. If you don't show up, the no-show fee will be the same as the cancellation fee.",
+                "info": {
+                  "date_before": "12 September 2024",
+                  "time_before_midnight": "23:59",
+                  "refundable_date": "2024-09-13T00:00:00+02:00",
+                  "date_before_raw": "2024-09-12",
+                  "timezone": "CEST",
+                  "timezone_offset": "7200",
+                  "refundable": 1,
+                  "refundable_date_midnight": "2024-09-12T23:59:59+02:00",
+                  "time": "00:00",
+                  "date": "13 September 2024",
+                  "date_raw": "2024-09-13 00:00:00",
+                  "is_midnight": 1
+                },
+                "type_translation": "Free to cancel"
+              }
+            },
+            "room_id": 167616101,
+            "max_occupancy": "1",
+            "full_board": 0,
+            "extrabed_available_amount": null,
+            "is_flash_deal": 0,
+            "nr_adults": 1,
+            "name_without_policy": "Double or Twin Room - single occupancy",
+            "smoking": 0,
+            "half_board": 0,
+            "lunch_included": 0,
+            "is_mobile_deal": 0,
+            "is_block_fit": 1,
+            "fc_deadline_till_midnight": 1,
+            "breakfast_included": 0,
+            "product_price_breakdown": {
+              "gross_amount": {
+                "amount_unrounded": "AED 589.31",
+                "value": 589.309596098911,
+                "amount_rounded": "AED 589",
+                "currency": "AED"
+              },
+              "all_inclusive_amount": {
+                "currency": "AED",
+                "amount_rounded": "AED 599",
+                "amount_unrounded": "AED 599.07",
+                "value": 599.066377491277
+              },
+              "charges_details": {
+                "translated_copy": "+AED 9.76 taxes and charges",
+                "mode": "extra_charges",
+                "amount": {
+                  "currency": "AED",
+                  "value": 10
+                }
+              },
+              "has_long_stays_weekly_rate_price": 0,
+              "has_long_stays_monthly_rate_price": 0,
+              "nr_stays": 9,
+              "included_taxes_and_charges_amount": {
+                "amount_unrounded": "AED 33.36",
+                "value": 33.357146948995,
+                "amount_rounded": "AED 33",
+                "currency": "AED"
+              },
+              "net_amount": {
+                "currency": "AED",
+                "amount_rounded": "AED 556",
+                "value": 555.952449149916,
+                "amount_unrounded": "AED 555.95"
+              },
+              "gross_amount_hotel_currency": {
+                "amount_unrounded": "€ 151",
+                "value": 151,
+                "amount_rounded": "€ 151",
+                "currency": "EUR"
+              },
+              "gross_amount_per_night": {
+                "amount_unrounded": "AED 589.31",
+                "value": 589.309596098911,
+                "amount_rounded": "AED 589",
+                "currency": "AED"
+              },
+              "excluded_amount": {
+                "currency": "AED",
+                "value": 9.75678139236608,
+                "amount_unrounded": "AED 9.76",
+                "amount_rounded": "AED 10"
+              },
+              "items": [
+                {
+                  "inclusion_type": "included",
+                  "details": "6 % VAT",
+                  "item_amount": {
+                    "value": 33.357146948995,
+                    "amount_unrounded": "AED 33.36",
+                    "amount_rounded": "AED 33",
+                    "currency": "AED"
+                  },
+                  "name": "VAT",
+                  "kind": "charge",
+                  "base": {
+                    "percentage": 6,
+                    "kind": "percentage"
+                  }
+                },
+                {
+                  "base": {
+                    "kind": "per_person_per_night",
+                    "base_amount": 2.5
+                  },
+                  "kind": "charge",
+                  "inclusion_type": "excluded",
+                  "details": null,
+                  "name": "City tax",
+                  "item_amount": {
+                    "currency": "AED",
+                    "amount_rounded": "AED 10",
+                    "amount_unrounded": "AED 9.76",
+                    "value": 9.75678139236608
+                  }
+                }
+              ],
+              "benefits": []
+            },
+            "max_children_free": 0,
+            "refundable": 1,
+            "children_ages": []
+          }
+        ],
+        "is_cpv2_property": 1,
+        "is_family_friendly": 0,
+        "property_highlight_strip": [
+          {
+            "name": "Free parking",
+            "icon_list": [
+              {
+                "icon": "iconset/parking_sign",
+                "size": 1
+              }
+            ]
+          },
+          {
+            "name": "Restaurant",
+            "icon_list": [
+              {
+                "icon": "iconset/food",
+                "size": 1
+              }
+            ]
+          },
+          {
+            "icon_list": [
+              {
+                "size": 1,
+                "icon": "iconset/spa"
+              }
+            ],
+            "name": "Spa and wellness centre"
+          },
+          {
+            "name": "Air conditioning",
+            "icon_list": [
+              {
+                "icon": "iconset/snowflake",
+                "size": 1
+              }
+            ]
+          },
+          {
+            "name": "Private bathroom",
+            "icon_list": [
+              {
+                "icon": "iconset/shower",
+                "size": 1
+              }
+            ]
+          },
+          {
+            "name": "View",
+            "icon_list": [
+              {
+                "size": 1,
+                "icon": "iconset/eye"
+              }
+            ]
+          },
+          {
+            "name": "Free WiFi",
+            "icon_list": [
+              {
+                "size": 1,
+                "icon": "iconset/wifi"
+              }
+            ]
+          },
+          {
+            "icon_list": [
+              {
+                "size": 1,
+                "icon": "iconset/shower"
+              }
+            ],
+            "name": "Bath or shower"
+          },
+          {
+            "icon_list": [
+              {
+                "size": 1,
+                "icon": "iconset/fitness"
+              }
+            ],
+            "name": "Fitness centre"
+          },
+          {
+            "icon_list": [
+              {
+                "size": 1,
+                "icon": "iconset/food"
+              }
+            ],
+            "name": "Minibar"
+          }
+        ],
+        "seen_cc_app_rp_missing_fac": 0,
+        "is_closed": 0,
+        "city": "Tirane",
+        "wifi_review_score": {
+          "rating": 8.8
+        },
+        "districts": [
+          10531
+        ],
+        "max_rooms_in_reservation": 10
+      }
+]

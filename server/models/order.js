@@ -10,13 +10,25 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      Order.belongsTo(models.Hotel)
+      Order.belongsTo(models.User)
     }
   }
   Order.init({
     HotelId: DataTypes.INTEGER,
     UserId: DataTypes.INTEGER,
-    dateCheckIn: DataTypes.INTEGER,
+    dateCheckIn: {
+      type: DataTypes.DATE,
+      allowNull: false,
+      validate:{
+        notNull: {
+          msg: 'Date Check In is required'
+        },
+        notEmpty:{
+          msg: 'Date Check In is required'
+        }
+      } 
+    },
     dateCheckOut: DataTypes.INTEGER
   }, {
     sequelize,
