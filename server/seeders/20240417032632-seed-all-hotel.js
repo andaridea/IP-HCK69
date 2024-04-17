@@ -21,9 +21,8 @@ module.exports = {
       const hotels = data.result.map((hotel) => {
         return hotel.hotel_id
       })
-      console.log(hotels, hotels.length)
-      for (let i = 0; i < 200; i++) {
-        const hotelId = hotels[0]
+      for (let i = 0; i < 100; i++) {
+        const hotelId = hotels[i]
         const options = {
           method: 'GET',
           url: 'https://booking-com.p.rapidapi.com/v2/hotels/details',

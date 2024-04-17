@@ -1,4 +1,30 @@
+import axios from "axios"
 export default function LoginPage() {
+    async function handleCredentialResponse(response) {
+        try {
+            await axios({
+                method: "POST",
+                url: "http://localhost:3000/login",
+                headers: {
+                    google_token: response.credential
+                }
+            })
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    window.onload = function () {
+        google.accounts.id.initialize({
+          client_id: "507837005559-ofrc326qv9vnu2802ihntvdqg2tc11i1.apps.googleusercontent.com",
+          callback: handleCredentialResponse
+        });
+        google.accounts.id.renderButton(
+          document.getElementById("buttonDiv"),
+          { theme: "outline", size: "large" }  // customization attributes
+        );
+        google.accounts.id.prompt(); // also display the One Tap dialog
+      }
     return (
         <>
             <div className="relative flex min-h-screen">
@@ -16,13 +42,14 @@ export default function LoginPage() {
                     </h2>
                     <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
                     <form className="space-y-6" action="#" method="POST">
-                        <div>
-                            <button
+                        <div className="flex justify-center">
+                            {/* <button
                                 type="submit"
                                 className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
                                 Continue with Google
-                            </button>
+                            </button> */}
+                            <div id="buttonDiv"></div>
                         </div>
                     </form>
                     <div className="border-t-4 mt-8 text-center">
