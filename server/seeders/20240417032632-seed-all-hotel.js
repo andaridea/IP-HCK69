@@ -22,7 +22,7 @@ module.exports = {
         return hotel.hotel_id
       })
       for (let i = 0; i < 100; i++) {
-        const hotelId = hotels[i]
+        const hotelId = hotels[0]
         const options = {
           method: 'GET',
           url: 'https://booking-com.p.rapidapi.com/v2/hotels/details',

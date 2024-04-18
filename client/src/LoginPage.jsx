@@ -1,14 +1,18 @@
 import axios from "axios"
+import { useNavigate } from "react-router-dom"
 export default function LoginPage() {
+    const navigate = useNavigate()
     async function handleCredentialResponse(response) {
         try {
-            await axios({
+            const { data } = await axios({
                 method: "POST",
                 url: "http://localhost:3000/login",
                 headers: {
                     google_token: response.credential
                 }
             })
+            localStorage.access_token = data.access_token
+            navigate("/")
         } catch (error) {
             console.log(error)
         }
