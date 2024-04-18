@@ -17,6 +17,18 @@ module.exports = (sequelize, DataTypes) => {
   Order.init({
     HotelId: DataTypes.INTEGER,
     UserId: DataTypes.INTEGER,
+    orderId: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate:{
+        notNull: {
+          msg: 'Order id is required'
+        },
+        notEmpty:{
+          msg: 'Order id is required'
+        }
+      } 
+    },
     dateCheckIn: {
       type: DataTypes.DATE,
       allowNull: false,
@@ -29,10 +41,25 @@ module.exports = (sequelize, DataTypes) => {
         }
       } 
     },
-    dateCheckOut: DataTypes.INTEGER,
+    dateCheckOut: {
+      type: DataTypes.DATE,
+      allowNull: false,
+      validate:{
+        notNull: {
+          msg: 'Date Check Out is required'
+        },
+        notEmpty:{
+          msg: 'Date Check Out is required'
+        }
+      } 
+    },
     isPaid: {
       type: DataTypes.BOOLEAN,
       defaultValue: false
+    },
+    totalPrice: {
+      type: DataTypes.INTEGER,
+      allowNull: false
     }
   }, {
     sequelize,

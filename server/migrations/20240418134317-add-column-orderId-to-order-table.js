@@ -3,14 +3,14 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
-    await queryInterface.addColumn("Orders", "isPaid", Sequelize.BOOLEAN, {
+    await queryInterface.addColumn("Orders", "orderId", Sequelize.STRING, {
       salary: {
-        type: Sequelize.BOOLEAN
+        type: Sequelize.STRING
       }
     })
   },
 
   async down (queryInterface, Sequelize) {
-    await queryInterface.removeColumn("Orders", "isPaid")
+    await queryInterface.removeColumn("Orders", "orderId")
   }
 };

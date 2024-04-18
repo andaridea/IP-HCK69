@@ -21,29 +21,8 @@ export default function HomePage() {
     return (
         <>
             <div>
-                {/* Navbar */}
-                <nav className="bg-white shadow-md">
-                    <div className="max-w-7xl mx-auto px-4">
-                        <div className="flex justify-between items-center py-4">
-                            <div className="flex items-center">
-                                <img
-                                    src="./globe.png"
-                                    alt="Airbnb Logo"
-                                    className="h-12"
-                                />
-                                <span className="ml-2 text-lg font-extrabold text-purple-600 font-sans">Staycation!</span>
-                            </div>
-                            <div className="flex items-center space-x-6">
-                                <button className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg shadow-md">
-                                    Log In
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-
                 {/* Hero Section */}
-                <div className="bg-gradient-to-b from-gray-100 to-white">
+                <div className="bg-gradient-to-b from-gray-100 to-white px-8 py-16">
                     <div className="max-w-7xl mx-auto px-4 py-16">
                         <div className="text-center">
                             <h1 className="text-4xl font-semibold text-gray-900 mb-4 font-serif">
@@ -62,14 +41,14 @@ export default function HomePage() {
                             </div>
                         </div>
                     </div>
+                    <h2 className="text-2xl font-semibold text-gray-900 mb-6 font-serif">Explore nearby</h2>
+                    <div className="flex flex-wrap -mx-4">
+                        {dataHotels && dataHotels.map(el => {
+                            return <Card key={el.id} el={el} />
+                        })}
+                    </div>
                 </div>
-                <div className="max-w-7xl mx-auto px-4 py-12">
-                <h2 className="text-2xl font-semibold text-gray-900 mb-6 font-serif">Explore nearby</h2>
-                {dataHotels && dataHotels.map(el => {
-                    return <Card key={el.id} el={el} />
-                })}
-                </div>
-                
+
                 {/* Footer */}
                 <footer className="bg-gray-900 text-white py-8">
                     <div className="max-w-7xl mx-auto px-4">

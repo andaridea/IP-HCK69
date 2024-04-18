@@ -3,6 +3,8 @@ function errorHandler (err, req, res, next) {
         res.status(400).json({ message: err.errors[0].message })
     } else if (err.name === "InvalidInput") {
         res.status(400).json({ message: "Email and password is required" })
+    } else if (err.name === "AlreadyPaid") {
+        res.status(400).json({ message: "Transaction Already Paid" })
     } else if (err.name === "InvalidUser") {
         res.status(401).json({ message: "Email or password is invalid" })
     } else if (err.name === "NotFound") {

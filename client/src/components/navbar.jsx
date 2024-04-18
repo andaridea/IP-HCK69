@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 export default function Navbar () {
     return (
         <>
@@ -8,15 +9,15 @@ export default function Navbar () {
                             <div className="flex items-center">
                                 <img
                                     src="./globe.png"
-                                    alt="Airbnb Logo"
+                                    alt="Logo"
                                     className="h-12"
                                 />
                                 <span className="ml-2 text-lg font-extrabold text-purple-600 font-sans">Staycation!</span>
                             </div>
                             <div className="flex items-center space-x-6">
-                                <button className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg shadow-md">
+                                <Link to="/login" className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg shadow-md">
                                     Log In
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>

@@ -1,19 +1,20 @@
 import { useEffect, useState } from "react";
-import Navbar from "./components/navbar";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { localRequest } from "./utils/axios";
 
 export default function DetailPage() {
     const [dataHotels, setDataHotels] = useState([])
+    const [checkIn, setCheckIn] = useState("")
+    const [checkOut, setCheckOut] = useState("")
+    const [totalPrice, setTotalPrice] = useState(0)
     let { id } = useParams()
     const fetchData = async () => {
         try {
             const { data } = await localRequest({
-                url: "/hotels/" + id,
+                url: "/pub/hotels/" + id,
                 method: "GET"
             }) 
             setDataHotels(data)
-            console.log(dataHotels)
         } catch (error) {
             console.log(error)
         }
@@ -21,9 +22,30 @@ export default function DetailPage() {
     useEffect(() => {
         fetchData()
     }, [])
+
+    useEffect(() => {
+        if (checkIn && checkOut) {
+            const startDate = new Date(checkIn);
+            const endDate = new Date(checkOut);
+            const days = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24));
+            const pricePerNight = dataHotels.price;
+            const total = days * pricePerNight;
+            setTotalPrice(total);
+        } else {
+            setTotalPrice(0);
+        }
+    }, [checkIn, checkOut, dataHotels.price]);
+
+    const handleCheckInChange = (e) => {
+        setCheckIn(e.target.value);
+    };
+
+    const handleCheckOutChange = (e) => {
+        setCheckOut(e.target.value);
+    };
+
     return (
         <>
-        <Navbar />
             <div className="max-w-4xl mx-auto px-4 py-8">
                 {/* Image*/}
                 <div className="grid grid-cols-3 gap-4 mb-8">
@@ -45,6 +67,7 @@ export default function DetailPage() {
                                     type="date"
                                     id="checkin"
                                     className="border border-gray-300 rounded-full py-3 px-4 w-full max-w-lg"
+                                    onChange={handleCheckInChange}
                                 />
                             </div>
                             <div>
@@ -53,13 +76,14 @@ export default function DetailPage() {
                                     type="date"
                                     id="checkout"
                                     className="border border-gray-300 rounded-full py-3 px-4 w-full max-w-lg"
+                                    onChange={handleCheckOutChange}
                                 />
                             </div>
-                            <span className="text-gray-600 text-lg">Total Price: {dataHotels.price}</span>
+                            <span className="text-gray-600 text-lg">Total Price: {totalPrice}</span>
                             <div className="flex justify-between items-center col-span-2">
-                                <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg shadow-md w-full">
+                                <Link to="/order/:id" className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg shadow-md w-full flex justify-center">
                                     Reserve
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -69,17 +93,6 @@ export default function DetailPage() {
                 <div className="bg-white shadow-md rounded-lg overflow-hidden mb-8">
                     <div className="p-6">
                         <h1 className="text-3xl font-semibold mb-4">{dataHotels.name}</h1>
-                        <div className="flex items-center mb-4">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-6 w-6 text-purple-600 mr-2"
-                                viewBox="0 0 20 20"
-                                fill="currentColor"
-                            >
-                                {/* Description */}
-                            </svg>
-                            <span className="text-gray-600">1 guest · 1 bedroom · 1 bed · 1 shared bath</span>
-                        </div>
                         <p className="text-gray-700 mb-4">
                            {dataHotels.description}
                         </p>

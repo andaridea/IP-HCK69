@@ -19,10 +19,23 @@ class Controller {
         }
     }
 
-    static async getHotelById (req, res, next) {
+    static async getPublicHotelById (req, res, next) {
         try {
             const hotelId = req.params.id
             const hotel = await Hotel.findByPk(hotelId)
+            if (!hotel) {
+                throw { name: 'NotFound' }
+            }
+            res.status(200).json(hotel)
+        } catch (error) {
+            next(error)
+        }
+    }
+
+    static async getHotelById (req, res, next) {
+        try {
+            const hotelId = req.params.id
+            const hotel = await Hotel.findByPk(hotelId, {include: User})
             if (!hotel) {
                 throw { name: 'NotFound' }
             }

@@ -13,7 +13,7 @@ export default function LoginPage() {
                 }
             })
             localStorage.access_token = data.access_token
-            navigate("/")
+            navigate("/hotels")
         } catch (error) {
             console.log(error)
         }
@@ -35,12 +35,12 @@ export default function LoginPage() {
     return (
         <>
             <div className="relative flex min-h-screen">
-                <div className="w-1/2 h-full flex flex-col justify-end items-center">
-                    <img
-                        className="h-100 w-auto"
-                        src="./labuanbajo.jpg"
+                <div className="w-1/2 h-full flex justify-center items-center">
+                    {/* <img
+                        className="max-h-96 w-auto"
+                        src="./lb2.jpg"
                         alt="Background Login"
-                    />
+                    /> */}
                 </div>
                 <div className="w-1/2 bg-slate-50 flex min-h-screen items-center justify-center">
                 <div className="sm:w-full sm:max-w-sm">

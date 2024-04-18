@@ -1,3 +1,4 @@
+import { Children } from "react"
 import CartPage from "./CartPage"
 import DetailPage from "./DetailPage"
 import HomePage from "./HomePage"
@@ -7,24 +8,40 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import MainLayout from "./MainLayout"
+import SecondLayout from "./SecondLayout"
 
 const router = createBrowserRouter([
-  {
-    path: "/login",
-    element: <LoginPage />,
-  },
-  // {
-  //   path: "/hotels",
-  //   element: <HotelPage/>,
-  // },
-  {
-    path: "/",
-    element: <HomePage />,
-  },
-  {
-    path: "/hotel/:id",
-    element: <DetailPage />,
-  },
+ {
+  element: <MainLayout />,
+  children: [
+    {
+      path: "/login",
+      element: <LoginPage />,
+    },
+    {
+      path: "/",
+      element: <HomePage />,
+    },
+    {
+      path: "/pub/hotel/:id",
+      element: <DetailPage />,
+    },
+  ]
+ },
+ {
+  element: <SecondLayout />,
+  children: [
+    {
+      path: "/hotels",
+      element: <HomePage />,
+    },
+    {
+      path: "/hotel/:id",
+      element: <DetailPage />,
+    },
+  ]
+ },
 ]);
 
 function App() {
