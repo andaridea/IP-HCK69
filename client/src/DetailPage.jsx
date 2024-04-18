@@ -1,6 +1,26 @@
+import { useEffect, useState } from "react";
 import Navbar from "./components/navbar";
+import { useParams } from "react-router-dom";
+import { localRequest } from "./utils/axios";
 
 export default function DetailPage() {
+    const [dataHotels, setDataHotels] = useState([])
+    let { id } = useParams()
+    const fetchData = async () => {
+        try {
+            const { data } = await localRequest({
+                url: "/hotels/" + id,
+                method: "GET"
+            }) 
+            setDataHotels(data)
+            console.log(dataHotels)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+    useEffect(() => {
+        fetchData()
+    }, [])
     return (
         <>
         <Navbar />
@@ -8,7 +28,7 @@ export default function DetailPage() {
                 {/* Image*/}
                 <div className="grid grid-cols-3 gap-4 mb-8">
                     <img
-                        src="https://via.placeholder.com/800x600"
+                        src={dataHotels.image}
                         alt="Property Image"
                         className="w-full h-64 object-cover rounded-lg shadow-md"
                     />
@@ -17,7 +37,7 @@ export default function DetailPage() {
                 {/* Check-in and Check-out */}
                 <div className="bg-white shadow-md rounded-lg overflow-hidden mb-8 max-w-2xl">
                     <div className="p-6">
-                    <h1 className="text-base font-semibold text-black-600 mb-4"><span className="text-3xl font-bold">$ 80</span> / night</h1>
+                    <h1 className="text-base font-semibold text-black-600 mb-4"><span className="text-3xl font-bold">{dataHotels.price}</span> / night</h1>
                         <div className="grid grid-cols-2 gap-4">
                             <div>
                                 <label htmlFor="checkin" className="block text-sm font-medium text-gray-700 mb-1">Check-in</label>
@@ -35,7 +55,7 @@ export default function DetailPage() {
                                     className="border border-gray-300 rounded-full py-3 px-4 w-full max-w-lg"
                                 />
                             </div>
-                            <span className="text-gray-600 text-lg">Total After Taxes: $ 80</span>
+                            <span className="text-gray-600 text-lg">Total Price: {dataHotels.price}</span>
                             <div className="flex justify-between items-center col-span-2">
                                 <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg shadow-md w-full">
                                     Reserve
@@ -48,8 +68,7 @@ export default function DetailPage() {
                 {/* Hotel Information */}
                 <div className="bg-white shadow-md rounded-lg overflow-hidden mb-8">
                     <div className="p-6">
-                        <h1 className="text-3xl font-semibold mb-4">Private room in house</h1>
-                        <p className="text-gray-700 mb-4">Hosted by John Doe</p>
+                        <h1 className="text-3xl font-semibold mb-4">{dataHotels.name}</h1>
                         <div className="flex items-center mb-4">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +81,7 @@ export default function DetailPage() {
                             <span className="text-gray-600">1 guest · 1 bedroom · 1 bed · 1 shared bath</span>
                         </div>
                         <p className="text-gray-700 mb-4">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis nisl non odio mattis suscipit.
+                           {dataHotels.description}
                         </p>
                     </div>
                 </div>

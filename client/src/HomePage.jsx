@@ -1,6 +1,23 @@
+import { useEffect, useState } from "react";
 import Card from "./components/card";
+import { localRequest } from "./utils/axios";
 
 export default function HomePage() {
+    const [dataHotels, setDataHotels] = useState()
+    const fetchData = async () => {
+        try {
+            const { data } = await localRequest({
+                url: "/",
+                method: "GET"
+            })
+            setDataHotels(data)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+    useEffect(() => {
+        fetchData()
+    }, [])
     return (
         <>
             <div>
@@ -46,8 +63,13 @@ export default function HomePage() {
                         </div>
                     </div>
                 </div>
-                {/* Card */}
-                <Card />
+                <div className="max-w-7xl mx-auto px-4 py-12">
+                <h2 className="text-2xl font-semibold text-gray-900 mb-6 font-serif">Explore nearby</h2>
+                {dataHotels && dataHotels.map(el => {
+                    return <Card key={el.id} el={el} />
+                })}
+                </div>
+                
                 {/* Footer */}
                 <footer className="bg-gray-900 text-white py-8">
                     <div className="max-w-7xl mx-auto px-4">

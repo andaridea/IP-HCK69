@@ -1,4 +1,5 @@
 import axios from "axios"
+import { useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 export default function LoginPage() {
     const navigate = useNavigate()
@@ -18,17 +19,19 @@ export default function LoginPage() {
         }
     }
 
-    window.onload = function () {
-        google.accounts.id.initialize({
-          client_id: "507837005559-ofrc326qv9vnu2802ihntvdqg2tc11i1.apps.googleusercontent.com",
-          callback: handleCredentialResponse
-        });
-        google.accounts.id.renderButton(
-          document.getElementById("buttonDiv"),
-          { theme: "outline", size: "large" }  // customization attributes
-        );
-        google.accounts.id.prompt(); // also display the One Tap dialog
-      }
+    useEffect(() => {
+        window.onload = function () {
+            google.accounts.id.initialize({
+              client_id: "507837005559-ofrc326qv9vnu2802ihntvdqg2tc11i1.apps.googleusercontent.com",
+              callback: handleCredentialResponse
+            });
+            google.accounts.id.renderButton(
+              document.getElementById("buttonDiv"),
+              { theme: "outline", size: "large" }  // customization attributes
+            );
+            google.accounts.id.prompt(); // also display the One Tap dialog
+          }
+    }, [])
     return (
         <>
             <div className="relative flex min-h-screen">
