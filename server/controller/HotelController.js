@@ -3,6 +3,7 @@ class Controller {
     static async getAllHotelPublic (req, res, next) {
         try {
             const hotels = await Hotel.findAll()
+            console.log(hotels)
             res.status(200).json(hotels)
         } catch (error) {
             next(error)

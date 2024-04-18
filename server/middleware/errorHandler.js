@@ -7,6 +7,9 @@ function errorHandler (err, req, res, next) {
         res.status(401).json({ message: "Email or password is invalid" })
     } else if (err.name === "NotFound") {
         res.status(404).json({ message: "Data not found" })
+    } else {
+        res.status(500).json({ message: "Internal server error" })
+        console.log(err)
     }
 }
 module.exports = errorHandler

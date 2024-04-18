@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      Hotel.hasMany(models.User)
+      Hotel.hasMany(models.Order)
     }
   }
   Hotel.init({

@@ -1,10 +1,9 @@
 import Navbar from "./components/navbar";
-
-export default function DetailPage() {
+export default function CartPage () {
     return (
         <>
-        <Navbar />
             <div className="max-w-4xl mx-auto px-4 py-8">
+            <h1 className="text-3xl font-bold text-black-600 mb-4">Confirm and Pay</h1>
                 {/* Image*/}
                 <div className="grid grid-cols-3 gap-4 mb-8">
                     <img
@@ -38,7 +37,7 @@ export default function DetailPage() {
                             <span className="text-gray-600 text-lg">Total After Taxes: $ 80</span>
                             <div className="flex justify-between items-center col-span-2">
                                 <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg shadow-md w-full">
-                                    Reserve
+                                    Confirm and Pay
                                 </button>
                             </div>
                         </div>

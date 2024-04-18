@@ -29,7 +29,11 @@ module.exports = (sequelize, DataTypes) => {
         }
       } 
     },
-    dateCheckOut: DataTypes.INTEGER
+    dateCheckOut: DataTypes.INTEGER,
+    isPaid: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false
+    }
   }, {
     sequelize,
     modelName: 'Order',
