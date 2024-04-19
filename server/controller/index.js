@@ -2,6 +2,7 @@ const { OAuth2Client } = require('google-auth-library');
 const client = new OAuth2Client();
 const { User, Order } = require("../models/index");
 const { createToken } = require('../helpers/jwt');
+const midtransClient = require('midtrans-client')
 
 class Controller {
     static async login(req, res, next) {
@@ -25,25 +26,21 @@ class Controller {
 
             res.status(200).json({ access_token })
         } catch (error) {
-            console.log(error)
             next(error)
         }
     }
     static async getUser(req, res, next) {
         try {
             const userId = req.user.id
-            const user = await User.findByPk(userId, { include: Order })
-            res.status(200).json({ id: user.id, isPaid: user.Order.isPaid })
+            const user = await User.findByPk(userId)
+            res.status(200).json({user})
         } catch (error) {
 
         }
     }
     static async generateMidtransToken(req, res, next) {
         try {
-            const user = await User.findByPk(req.user.id, { include: Order })
-            if (user.Order.isPaid) {
-                throw { name: "AlreadyPaid" }
-            }
+            // const { id, totalPrice, checkIn, checkOut } = req.body;
             let snap = new midtransClient.Snap({
                 // Set to true if you want Production Environment (accept real transaction).
                 isProduction: false,
@@ -55,23 +52,28 @@ class Controller {
             let parameter = {
                 "transaction_details": {
                     "order_id": orderId,
-                    "gross_amount": amount
+                    "gross_amount": 10_000
                 },
                 "credit_card": {
                     "secure": true
                 },
                 "customer_details": {
-                    "name": user.name,
-                    "email": user.email,
+                    "name": req.user.name,
+                    "email": req.user.email,
                 }
             }
 
-            const midtransToken = await snap.createTransaction(parameter)
+            const transaction = await snap.createTransaction(parameter)
             let transactionToken = transaction.token;
-            await Order.create({
-                orderId,
 
-            })
+            // await Order.create({
+            //     orderId,
+            //     totalPrice,
+            //     dateCheckIn: checkIn,
+            //     dateCheckOut: checkOut,
+            //     UserId: req.user.id,
+            //     HotelId: id
+            // })
             res.status(200).json({message: "Successfully paid"}, transactionToken)
         } catch (error) {
             next(error)

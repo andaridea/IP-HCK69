@@ -28,9 +28,7 @@ const authentication = async (req, res, next)  => {
             throw {name: "InvalidToken"}
         }
 
-        req.user = {
-            id: user.id,
-        }
+        req.user = user
         next()
     } catch (error) {
         next (error)

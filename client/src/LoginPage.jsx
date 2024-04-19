@@ -22,53 +22,45 @@ export default function LoginPage() {
     useEffect(() => {
         window.onload = function () {
             google.accounts.id.initialize({
-              client_id: "507837005559-ofrc326qv9vnu2802ihntvdqg2tc11i1.apps.googleusercontent.com",
-              callback: handleCredentialResponse
+                client_id: "507837005559-ofrc326qv9vnu2802ihntvdqg2tc11i1.apps.googleusercontent.com",
+                callback: handleCredentialResponse
             });
             google.accounts.id.renderButton(
-              document.getElementById("buttonDiv"),
-              { theme: "outline", size: "large" }  // customization attributes
+                document.getElementById("buttonDiv"),
+                { theme: "outline", size: "large" }  // customization attributes
             );
             google.accounts.id.prompt(); // also display the One Tap dialog
-          }
+        }
     }, [])
     return (
         <>
-            <div className="relative flex min-h-screen">
-                <div className="w-1/2 h-full flex justify-center items-center">
-                    {/* <img
-                        className="max-h-96 w-auto"
-                        src="./lb2.jpg"
-                        alt="Background Login"
-                    /> */}
-                </div>
-                <div className="w-1/2 bg-slate-50 flex min-h-screen items-center justify-center">
-                <div className="sm:w-full sm:max-w-sm">
-                    <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-                        Sign in to your account
-                    </h2>
-                    <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                    <form className="space-y-6" action="#" method="POST">
-                        <div className="flex justify-center">
-                            <div id="buttonDiv"></div>
+            <nav className="bg-white shadow-md">
+                <div className="max-w-7xl mx-auto px-4">
+                    <div className="flex justify-between items-center py-4">
+                        <div className="flex items-center">
+                            <img
+                                src="./globe.png"
+                                alt="Logo"
+                                className="h-12"
+                            />
+                            <span className="ml-2 text-lg font-extrabold text-purple-600 font-sans">Staycation!</span>
                         </div>
-                    </form>
-                    <div className="border-t-4 mt-8 text-center">
-                    <span className="text-sm">
-                        By signing in or creating an account, you agree with our <span className="font-bold text-sm">Terms and Conditions</span>
-                    </span>
-                    </div>
-                    <div className="mt-4 text-center">
-                    <span className="text-sm">
-                        All rights reserved.
-                        Copyright 2024 - staycation.com
-                    </span>
                     </div>
                 </div>
-                </div>
+            </nav>
+            <div className="flex justify-center items-center min-h-screen bg-gray-100">
+                <div className="max-w-md w-full p-6 bg-white rounded-lg shadow-lg">
+                    <h2 className="text-3xl font-bold text-center mb-6">Sign in to Your Account</h2>
+                    <div id="buttonDiv" className="flex justify-center mb-6"></div>
+                    <div className="text-center text-sm text-gray-500">
+                        By signing in or creating an account, you agree with our{" "}
+                        <span className="font-bold text-blue-500 cursor-pointer">Terms and Conditions</span>
+                    </div>
+                    <div className="text-center text-sm text-gray-500 mt-2">
+                        All rights reserved. Copyright 2024 - staycation.com
+                    </div>
                 </div>
             </div>
-
         </>
     )
 }

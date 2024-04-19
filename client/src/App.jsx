@@ -7,18 +7,17 @@ import NavbarLogin from "./components/navbarlogin"
 import {
   createBrowserRouter,
   RouterProvider,
+  redirect
 } from "react-router-dom";
 import MainLayout from "./MainLayout"
 import SecondLayout from "./SecondLayout"
+import HomePageLogin from "./pages/afterlogin/HomePageLogin"
+import DetailPageLogin from "./pages/afterlogin/DetailPageLogin"
 
 const router = createBrowserRouter([
  {
   element: <MainLayout />,
   children: [
-    {
-      path: "/login",
-      element: <LoginPage />,
-    },
     {
       path: "/",
       element: <HomePage />,
@@ -31,17 +30,28 @@ const router = createBrowserRouter([
  },
  {
   element: <SecondLayout />,
+  loader: () => {
+    return !localStorage.getItem("access_token") ? redirect("/login") : null;
+  },
   children: [
     {
       path: "/hotels",
-      element: <HomePage />,
+      element: <HomePageLogin />,
     },
     {
       path: "/hotel/:id",
-      element: <DetailPage />,
+      element: <DetailPageLogin />,
+    },
+    {
+      path: "/carts",
+      element: <CartPage />,
     },
   ]
  },
+ {
+  path: "/login",
+  element: <LoginPage />,
+},
 ]);
 
 function App() {

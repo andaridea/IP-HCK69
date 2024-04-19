@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Card from "./components/card";
-import { localRequest } from "./utils/axios";
+import Card from "../../components/card";
+import { localRequest } from "../../utils/axios";
 import InfiniteScroll from "react-infinite-scroll-component";
 
 export default function HomePageLogin() {
@@ -11,9 +11,12 @@ export default function HomePageLogin() {
     const fetchData = async () => {
         try {
             const { data } = await localRequest({
-                url: "/",
+                url: "/hotels",
                 method: "GET",
                 params: { page },
+                headers: {
+                    Authorization: `Bearer ${localStorage.getItem("access_token")}`
+                }
             })
             setDataHotels((prevData) => [...prevData, ...data]);
             setPage((prevPage) => prevPage + 1);

@@ -35,7 +35,7 @@ class Controller {
     static async getHotelById (req, res, next) {
         try {
             const hotelId = req.params.id
-            const hotel = await Hotel.findByPk(hotelId, {include: User})
+            const hotel = await Hotel.findByPk(hotelId)
             if (!hotel) {
                 throw { name: 'NotFound' }
             }

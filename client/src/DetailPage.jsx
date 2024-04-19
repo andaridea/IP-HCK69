@@ -4,9 +4,6 @@ import { localRequest } from "./utils/axios";
 
 export default function DetailPage() {
     const [dataHotels, setDataHotels] = useState([])
-    const [checkIn, setCheckIn] = useState("")
-    const [checkOut, setCheckOut] = useState("")
-    const [totalPrice, setTotalPrice] = useState(0)
     let { id } = useParams()
     const fetchData = async () => {
         try {
@@ -22,28 +19,6 @@ export default function DetailPage() {
     useEffect(() => {
         fetchData()
     }, [])
-
-    useEffect(() => {
-        if (checkIn && checkOut) {
-            const startDate = new Date(checkIn);
-            const endDate = new Date(checkOut);
-            const days = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24));
-            const pricePerNight = dataHotels.price;
-            const total = days * pricePerNight;
-            setTotalPrice(total);
-        } else {
-            setTotalPrice(0);
-        }
-    }, [checkIn, checkOut, dataHotels.price]);
-
-    const handleCheckInChange = (e) => {
-        setCheckIn(e.target.value);
-    };
-
-    const handleCheckOutChange = (e) => {
-        setCheckOut(e.target.value);
-    };
-
     return (
         <>
             <div className="max-w-4xl mx-auto px-4 py-8">
@@ -67,7 +42,6 @@ export default function DetailPage() {
                                     type="date"
                                     id="checkin"
                                     className="border border-gray-300 rounded-full py-3 px-4 w-full max-w-lg"
-                                    onChange={handleCheckInChange}
                                 />
                             </div>
                             <div>
@@ -76,10 +50,8 @@ export default function DetailPage() {
                                     type="date"
                                     id="checkout"
                                     className="border border-gray-300 rounded-full py-3 px-4 w-full max-w-lg"
-                                    onChange={handleCheckOutChange}
                                 />
                             </div>
-                            <span className="text-gray-600 text-lg">Total Price: {totalPrice}</span>
                             <div className="flex justify-between items-center col-span-2">
                                 <Link to="/order/:id" className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg shadow-md w-full flex justify-center">
                                     Reserve
